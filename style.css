@@ -930,6 +930,10 @@ a:hover {
 	display: none;
 }
 
+.composition__button {
+	margin-top: 3rem;
+}
+
 .composition__button--1 {
 	background-color: #E500A4;
 	opacity: 0.8;
@@ -1111,6 +1115,18 @@ a:hover {
     .youtube {
       height: 576px;
 	width: 1024px; } }
+@media only screen and (max-width: 120em) {
+		.youtube {
+		  height: 480px;
+		width: 848px; } }
+@media only screen and (max-width: 115em) {
+			.youtube {
+			  height: 360px;
+			width: 640px; } }
+@media only screen and (max-width: 115em) {
+				.youtube {
+				  height: 272px;
+				width: 480px; } }
 
 .footer {
 	display: grid;
