@@ -13,7 +13,7 @@
 }
 
 .u-margin-bottom-medium {
-	margin-bottom: 4rem !important;
+	margin-bottom: 3rem !important;
 }
 
 .u-margin-bottom-big {
@@ -1136,6 +1136,7 @@ a:hover {
 .label {
 	font: normal 28px Georgia,serif;
 	width: 100%;
+	padding: 1rem;
 }
 
 /* #####  NOTICE  ##### */

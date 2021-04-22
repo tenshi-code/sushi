@@ -2414,6 +2414,7 @@ window.onload = function() {
   init();
 };
 
+var answered = false;
 
 function OnSubmit() {
 	/* Use this line of code to go directly to another page when the correct code is entered and the "submit" button is clicked. */
@@ -2421,7 +2422,18 @@ function OnSubmit() {
     
   /* Use this line of code to show an "Access Granted" linkable button the user must click after entering the correct code and clicking the "submit" button. */
   /* (the new button that appears must also be clicked to go to the new page.) */ 
-         if (document.getElementById('password').value == '1234') {window.button2.style.display="block"; }else{ alert('Access Denied, Please try again');}
+
+  if (document.getElementById('password').value == 'sushi' && answered) {
+    alert('Access Denied, Please try again');
+  } else if (document.getElementById('password').value == 'sushi') {
+    document.getElementById("question").innerHTML = "Enter the date in which you and Kaiser got together";
+    answered = true;
+    } else if (document.getElementById('password').value == '12' && answered) {
+      document.getElementById("question").innerHTML = "You have answered all of the questions correctly!";
+      window.button2.style.display="block";
+    } else {
+        alert('Access Denied, Please try again');
+       }
 }
 
 document.getElementById("button1").onclick = function() {OnSubmit()};
